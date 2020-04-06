@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numero ao Quadrado</title>
+  </head>
+  <body>
+    <input type="number" name="numero" id="numero" />
+    <button>Mostrar quadrado</button>
+
+    <script>
+      function mostrarValor() {
+        var input = document.querySelector("input");
+        var nun = input.value;
+        nun = parseInt(nun);
+        var res = nun * nun;
+        alert(nun + " ao quadrado é " + res);
+      }
+      var btn = document.querySelector("button");
+      btn.onclick = mostrarValor;
+    </script>
+  </body>
+</html>
